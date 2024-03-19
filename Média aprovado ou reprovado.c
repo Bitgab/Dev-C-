@@ -37,6 +37,13 @@
       // Calculo da média.
       
      media = (notaUm + notaDois + notaTres) / 3;
+
+
+      // Exibindo resultado
+
+      printf("\n=== EXIBINDO RESULTADO ===\n")
+      printf("Nome do aluno: %s
+	      
      
      
    	  // Condicional if e else.
