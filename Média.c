@@ -2,7 +2,7 @@
 # include <stdlib.h>
 # include <locale.h>
 
-    // DeclaraÁ„o de vari·veis 
+    // Declara√ß√£o de vari√°veis 
 
  float main(){
  	   setlocale(LC_ALL, "portuguese");
@@ -13,7 +13,7 @@
  	   float primeiraNota, segundaNota, terceiraNota, quartaNota;
  	   float soma, media;
   	 
-	 // Solicitando dados ao usu·rio.
+	 // Solicitando dados ao usu√°rio.
 	 
 	 printf ("Digite seu nome: ");
 	 scanf  ("%s",&nome);
@@ -50,6 +50,6 @@
 	 printf("Nota da II unidade: %.1f \n", segundaNota);
 	 printf("Nota da III unidade: %.1f \n", terceiraNota);
 	 printf("Nota da Iv unidade: %.1f \n", quartaNota);
-	 printf("MÈdia: %.1f \n", media);
+	 printf("M√©dia: %.1f \n", media);
  	return 0;
  }
