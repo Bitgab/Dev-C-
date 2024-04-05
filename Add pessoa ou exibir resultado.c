@@ -2,69 +2,85 @@
 # include <stdlib.h>
 # include <locale.h>
 # include <string.h>
-# include <limits.h>
 # include <ctype.h>
 
 
 int main (){
 setlocale(LC_ALL,"");
 
-// Declarando as variáveis.
+// Solicitando dados ao usuÃ¡rio 01.
 
-int idade, contador = 1;
+int idade, contador = 1, maiorIdade = INT_MIN, menorIdade = INT_MAX;
 char sexo, pessoa, continua;
-float salario;
-
-
-	do{
-		
-		printf("Digite seu nome: ");
-		scanf("%s",&pessoa);
-		printf("Informe sua idade:");
-		scanf("%i",&idade);
-		printf("Informe seu sexo usando [M / F]: ");
-		scanf("%s",&sexo);
+float salario, mediaDeSalario, quantidade, salario_5000;
 	
-		printf("\n");
-		printf("\n=== MENU ===\n");
-		printf("\n");
-		printf("Código |   Descrição \n");
-		printf("  1ª   | Adicionar pessoa \n");
-		printf("  2ª   | Esxibir resultados e sair \n");
-		printf("Resposta do usuário: ");
-		scanf("%s",&continua);
-		continua = toupper(continua);
-		printf("\n");
-		
-		
-// Switch Case para continmuar com as opção do menu.
+	
+// Solicitando dados ao usuÃ¡rio 02.
 
-	switch (continua){
-		
-		case '1':
-			
-			printf("Digite seu nome: ");
-			 scanf("%s",&pessoa);
-			printf("Informe sua idade:");
-			 scanf("%i",&idade);
-			printf("Informe seu sexo usando [M / F]: ");
-			 scanf("%s",&sexo);
-			soma += pessoas;
-			contador++;
+ printf("Digite seu nome: ");
+ scanf("%s",&pessoa);
+
+ printf("Digite sua idade: ");
+ scanf("%i",&idade);
+ 
+ printf("Informe seu sexo usando [M / F ]");
+ scanf("%s",&sexo);
+ 
+ printf("Informe seu salÃ¡rio: ");
+ scanf("%f",&salario);
+ 
+ 
+ printf("\n");
+ printf("\n=== MENU ===\n");
+ printf("\n");
+ printf("CÃ³digo |   DescriÃ§Ã£o \n");
+ printf("  1Âª   | Adicionar pessoa \n");
+ printf("  2Âª   | Esxibir resultados e sair \n");
+ printf("Resposta do usuÃ¡rio: ");
+ scanf("%s",&continua);
+ continua = toupper(continua);
+ printf("\n");
+ 
+ 
+ 
+// Condicional Switch Case 03.
+
+  switch (continua){
+  	
+  		case '1':
+  			
+  		 printf("Digite seu nome: ");
+  		 scanf("%s",&pessoa);
+
+		 printf("Digite sua idade: ");
+ 		 scanf("%i",&idade);
+ 
+ 	   	 printf("Informe seu sexo usando [M / F ]");
+	     scanf("%s",&sexo);
+ 
+ 		 printf("Informe seu salÃ¡rio: ");
+ 		 scanf("%f",&salario);
+		 contador++;
+		 system("cls || clear");
 		break;
 		
-		case '2':
+		case '2': 
 		
-			soma / contador	
-	}			
-	} while (continua == '1');
-	
-
-
-// Solicitando dados ao usuário.
-
- 
-
-	
+		if (idade > maiorIdade){
+			maiorIdade = idade;
+		}
+		if (idade < menorIdade){
+			menorIdade = idade;
+		}
+		  
+		 if (salario > 5.000 ){
+		 	salario_5000 = salario;
+		 } 	
+       
+	    soma = salario += salario;
+	    media = salario / contador;
+	    
+			 	
+  } 
 return 0;	
 }
