@@ -6,14 +6,14 @@
  int main(){
  	setlocale(LC_ALL, "portuguese");
  	
- 	 // DeclaraÁ„o de vari·veis.
+ 	 // Declara√ß√£o de vari√°veis.
  	 
  	 char loginSalvo [200] = "Gabriel";
  	 char senhaSalva [200] = "1234567";
  	 char login      [200];
  	 char senha      [200];
  	 
- 	 printf("Informe seu usu·rio: ");
+ 	 printf("Informe seu usu√°rio: ");
  	 scanf("%s",&login);
  	 
  	 printf("Digite sua senha: ");
