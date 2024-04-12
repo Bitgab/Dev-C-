@@ -1,33 +1,39 @@
 # include <stdio.h>
+# include <stdlib.h>
 # include <locale.h>
-# define TAM 2
 
-int main (){
+# define TAM 6
+
+int main(){
 setlocale(LC_ALL,"");
 
-// Declarando vari·vel
-int i; 
+// Declarando as vari√°veis.
+int i;
 int numero[TAM];
 int pares = 0, impares = 0;
 
-// Solicitando dados ao usu·rio.
+
+// Solicitando daodosa ao usu√°rio.
 
 for (i = 0; i < TAM; i++){
-	printf("Digite o %d∫ n˙mero: ",i + 1, numero[i]);
+	printf("Digite o %d¬∫ n√∫mero:  ",i + 1, numero[i]);
 	scanf("%i",&numero[i]);
 	
-	if(numero[i] % 2 == 0){
-		 pares = pares ++;
-	} 
-	else{
-	impares++;
+		if (numero[i] % 2 == 0){
+		pares++;
+	} else {
+		impares++;
 	}
-}
+} 
 
-// Exibindo Resultado
+ system("cls || clear");
+// Exibindo Resultado.
 
 printf("\n=== EXIBINDO RESULTADO ===\n");
-printf("N˙meros Pares: %i \n", pares);
-printf("N˙meros Õmpares: %i \n", impares);
-return 0;
+for (i = 0; i < TAM; i++){
+	printf("%d¬∫ n√∫mero foi: %i\n", i + 1, numero[i]);}
+printf("\nQuantidade de n√∫meros Pares: %i\n", pares);
+printf("Quantidade de n√∫meros √çmpares: %i \n", impares);
+
+return 0;	
 }
